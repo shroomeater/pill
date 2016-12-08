@@ -8,7 +8,7 @@ CREATE TABLE "pti_pill"
 "path_armatura" text ,
 "tipo" text ,
 "materiale" text ,
- "stato" text ,
+"stato" text ,
 "proprieta" text ,
 "nro_sorgenti" integer ,
 "lungh_sbraccio" double ,
