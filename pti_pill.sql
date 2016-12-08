@@ -20,3 +20,6 @@ CREATE TABLE "pti_pill"
 "cod_lampada" integer ,
 PRIMARY KEY ("pk_uid")
 )
+
+--aggiungo colonna geometry
+SELECT AddGeometryColumn ('pti_pill','geom',3003,'POINT','XY');
