@@ -6,3 +6,6 @@ fraz_loc TEXT,
 nome_quadro TEXT,
 PRIMARY KEY (pk_uid)
 )
+
+--aggiungo colonna geometry
+SELECT AddGeometryColumn ('plg_aree_quadri','geom',3003,'POLYGON','XY');
