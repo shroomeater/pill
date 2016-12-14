@@ -1,14 +1,13 @@
 CREATE TABLE "pti_quadri"
 (
-"pk_uid" integer NOT NULL,
+"pk_uid" integer PRIMARY KEY autoincrement NOT NULL,
 "fraz_loc" text , "data_ril" date ,
 "nome_quadro" text , "nro_utente" text ,
 "path_quadro" text ,
 "path_fornitura" text ,
 "path_segnale" text ,
 "note" text ,
-"indirizzo" text ,
-PRIMARY KEY ("nro_utente")
+"indirizzo" text
 )
 
 --aggiungo colonna geometry
