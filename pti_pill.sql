@@ -1,9 +1,9 @@
-CREATE TABLE "pti_pill" 
+CREATE TABLE "pti_pill_prova" 
 (
-"pk_uid" integer NOT NULL,
+"pk_uid" integer PRIMARY KEY autoincrement NOT NULL,
 "rif_quadro" text ,
 "fraz_loc" text ,
-"data_ril" double ,
+"data_ril" date ,
 "path_supporto" text ,
 "path_armatura" text ,
 "tipo" text ,
@@ -17,8 +17,7 @@ CREATE TABLE "pti_pill"
 "tipo_armatura" text ,
 "stato_sorgente" text ,
 "altezza_pl" double ,
-"cod_lampada" integer ,
-PRIMARY KEY ("pk_uid")
+"cod_lampada" integer 
 )
 
 --aggiungo colonna geometry
