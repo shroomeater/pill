@@ -1,4 +1,4 @@
-CREATE TABLE "pti_pill_prova" 
+CREATE TABLE "pti_pill" 
 (
 "pk_uid" integer PRIMARY KEY autoincrement NOT NULL,
 "rif_quadro" text ,
