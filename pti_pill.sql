@@ -18,7 +18,8 @@ CREATE TABLE "pti_pill"
 "tipo_armatura" text ,
 "stato_sorgente" text ,
 "altezza_pl" double ,
-"cod_armatura" integer 
+"cod_armatura" integer ,
+"note" TEXT
 )
 
 --aggiungo colonna geometry
