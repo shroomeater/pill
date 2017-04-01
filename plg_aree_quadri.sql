@@ -3,7 +3,8 @@ CREATE TABLE plg_aree_quadri
 pk_uid integer PRIMARY KEY autoincrement NOT NULL ,
 data_ril date,
 fraz_loc TEXT,
-nome_quadro TEXT
+nome_quadro TEXT,
+note TEXT
 )
 
 --aggiungo colonna geometry
