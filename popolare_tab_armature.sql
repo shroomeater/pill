@@ -11,8 +11,7 @@ INSERT INTO "tab_armature"
 "stato_sorgente" ,
 "altezza_pl" ,
 "cod_armatura" ,
-"pk_uid",
-"geom" 
+"pk_uid"
 )
 SELECT 
 "path_armatura"  ,
@@ -26,6 +25,5 @@ SELECT
 "stato_sorgente" ,
 "altezza_pl" ,
 "cod_armatura" ,
-"pk_uid" ,
-"geom"
+"pk_uid"
 FROM "pti_pill"
