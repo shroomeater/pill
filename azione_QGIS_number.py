@@ -13,5 +13,19 @@ box = cLayer.boundingBoxOfSelected()
 iface.mapCanvas().setExtent(box)
 iface.mapCanvas().refresh()
 
+-- caso dei pill:
+  
+from qgis.utils import iface
+vl = QgsMapLayerRegistry.instance().mapLayersByName('pti_pill')[0]
+iface.setActiveLayer(vl)
+cLayer = iface.mapCanvas().currentLayer()
+expr = QgsExpression("\"pk_uid\"=[% "pk_uid" %]")
+it = cLayer.getFeatures( QgsFeatureRequest( expr ) )
+ids = [i.id() for i in it]
+cLayer.setSelectedFeatures( ids )
+box = cLayer.boundingBoxOfSelected()
+iface.mapCanvas().setExtent(box)
+iface.mapCanvas().refresh()
+
 -- articolo:
 -- https://medium.com/tantotanto/qgis-selezionare-geometrie-da-una-tabella-di-attributi-correlata-bea37747a7e2
