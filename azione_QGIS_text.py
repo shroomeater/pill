@@ -29,5 +29,3 @@ cLayer.setSelectedFeatures( ids )
 box = cLayer.boundingBoxOfSelected()
 iface.mapCanvas().setExtent(box)
 iface.mapCanvas().refresh()
-
-expr = QgsExpression("id_punto LIKE '[% "punto" %]%'")
