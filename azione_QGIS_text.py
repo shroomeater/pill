@@ -21,9 +21,13 @@ vl = QgsMapLayerRegistry.instance().mapLayersByName('pti_pill')[0]
 iface.setActiveLayer(vl)
 cLayer = iface.mapCanvas().currentLayer()
 expr = QgsExpression("\"rif_quadro\" like '[%nome_quadro%]'")
+# oppure riga 23 expr = QgsExpression("rif_quadro LIKE '[% "nome_quadro" %]%'")
+# oppure, per evitare carattere jolly expr = QgsExpression("rif_quadro IN ('[% "nome_quadro" %]')")
 it = cLayer.getFeatures( QgsFeatureRequest( expr ) )
 ids = [i.id() for i in it]
 cLayer.setSelectedFeatures( ids )
 box = cLayer.boundingBoxOfSelected()
 iface.mapCanvas().setExtent(box)
 iface.mapCanvas().refresh()
+
+expr = QgsExpression("id_punto LIKE '[% "punto" %]%'")
