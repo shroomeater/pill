@@ -21,20 +21,20 @@ FOREIGN KEY ("pk_uid") REFERENCES "pti_pill" ("pk_uid")
 
 
 
-CREATE TABLE "tab_armature" 
+CREATE TABLE "tab_luminaria" 
 (
-"pk_arm" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
-"path_soporte" text, --(foto soporte)
+"pk_lum" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+"path_luminaria" text, --(foto soporte)
 "clase_soporte" text, --( Poste HM, Baculo, Columna, Fachada, Catenaria, Otro)
-"tipo_soporte" text,
+"tipo_luminaria" text, --(Vial, Ornamental, , Proyector, Otro)
 "material" text,
 "estado" text, -- (Bueno, Sustituir, ND)
-"lungh_sbraccio" text,
+"long_brazo" text,
 "potencia" integer,
-"tipo_lampara" text,
+"tipo_lampara" text, --(LED, VSAP, VSBP, HM, VM, Otro)
 "tipo_armatura" text,
 "estado_fuente" text, -- (Conforme,No Conforme)
-"alturza_pl" text,
+"altura_pdl" text,
 "cod_armatura" text,
 "note" text,
 "pk_uid" INTEGER NOT NULL,
