@@ -15,3 +15,24 @@ CREATE TABLE "pti_quadri"
 "note" text , -- osservazioni
 "note_2" text --altre osservazioni
 )
+
+
+
+
+CREATE TABLE "pti_quadri"
+(
+"pk_uid" integer PRIMARY KEY autoincrement NOT NULL,
+"direccion" text , -- denominazione frazione e/o località
+"fecha_inv" date , -- fecha inventario
+"code_cuadro" text , -- codigo del cuadro E6CM17...
+"num_contador" text , -- numero contador 
+"foto_fuadro" text , -- directorio foto del cuadro
+"foto_ubicacion" text , -- directorio foto ubicacion
+"path_segnale" text , -- percorso foto segnale cellulare
+"temporizzatore" text, -- astronomico, fotocelula, automata, otro
+"regolador_flujo" text, -- tipo regulador flujo
+"elem_exogeno" text, -- presencia de circuitos de riego, semaforos, otros
+"cups" text, -- cups
+"note" text , -- osservazioni
+"note_2" text --altre osservazioni
+)
