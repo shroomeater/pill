@@ -28,6 +28,8 @@ CREATE TABLE "tab_luminaria"
 "clase_soporte" text, --( Poste HM, Baculo, Columna, Fachada, Catenaria, Otro)
 "tipo_luminaria" text, --(Vial, Ornamental, Ambiental, Proyector, Otro)
 "material" text,
+"marca" text,
+"modelo" text,
 "estado" text, -- (Bueno, Sustituir, ND)
 "long_brazo" text,
 "potencia" integer,
