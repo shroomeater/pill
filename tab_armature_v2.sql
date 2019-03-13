@@ -34,6 +34,7 @@ CREATE TABLE "tab_luminaria"
 "long_brazo" text,
 "potencia" integer,
 "tipo_lampara" text, --(LED, VSAP, VSBP, HM, VM, Otro)
+"temp_color" text, --(2700,3300,4000,etc)
 "tipo_luminaria" text, --(Vial, Ornamental, Ambiental, Proyector, Otro)
 "estado_fuente" text, -- (Conforme,No Conforme)
 "altura_pdl" text,
