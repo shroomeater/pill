@@ -26,7 +26,7 @@ CREATE TABLE "tab_luminaria"
 "pk_lum" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
 "path_luminaria" text, --(foto soporte)
 "clase_soporte" text, --( Poste HM, Baculo, Columna, Fachada, Catenaria, Otro)
-"tipo_luminaria" text, --(Vial, Ornamental, Ambiental, Proyector, Otro)
+"tipo_soporte" text, 
 "material" text,
 "marca" text,
 "modelo" text,
@@ -34,7 +34,7 @@ CREATE TABLE "tab_luminaria"
 "long_brazo" text,
 "potencia" integer,
 "tipo_lampara" text, --(LED, VSAP, VSBP, HM, VM, Otro)
-"tipo_armatura" text,
+"tipo_luminaria" text, --(Vial, Ornamental, Ambiental, Proyector, Otro)
 "estado_fuente" text, -- (Conforme,No Conforme)
 "altura_pdl" text,
 "cod_armatura" text,
